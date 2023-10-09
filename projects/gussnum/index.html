@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-indigo-300 h-screen w-screen flex items-center justify-center"
+  >
+    <div
+      class="bg-slate-500 h-64 w-64 md:h-2/4 lg:w-1/4 md:w-80 flex justify-center shadow-lg rounded-xl shadow-slate-500 m-4"
+    >
+      <div class="flex justify-center items-center mx-2">
+        <form class="" action="">
+          <div class="flex flex-col mb-4 h-full w-full p-4">
+            <h3 class="text-lg font-semibold text-slate-400 md:text-xl">
+              Try and guess any number between 1-100
+            </h3>
+            <h3 class="text-lg font-semibold text-slate-400 md:text-xl">
+              You have only 10 chance
+            </h3>
+            <label
+              class="mb-2 mt-2 text-white font-semibold md:text-xl"
+              for="num"
+              >Guss The Number</label
+            >
+            <input
+              class="mb-2 rounded-lg px-2 py-1 shadow-md outline-none"
+              type="text"
+              id="num"
+            />
+            <button
+              id="sub"
+              class="p-2 bg-indigo-300 rounded-md font-semibold shadow-md mb-2 md:text-2xl"
+              type="submit"
+            >
+              Submit
+            </button>
+            <div id="opfild">
+              <div class="text-lg font-semibold text-white md:text-xl">
+                <p>Previous Guess : <span id="prev"></span></p>
+              </div>
+              <div class="text-lg font-semibold text-white md:text-xl">
+                <p>Guess Remaining : <span id="guess-r"></span></p>
+              </div>
+              <div
+                id="high-low"
+                class="text-lg font-semibold text-white md:text-xl"
+              ></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
